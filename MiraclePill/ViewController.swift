@@ -8,8 +8,10 @@
 
 import UIKit
 
+//These are the Protocols needed for the operation of the UIPickerView
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    //To be affected by code
     @IBOutlet var statePicker: UIPickerView!
     @IBOutlet var statePickerBtn: UIButton!
     
