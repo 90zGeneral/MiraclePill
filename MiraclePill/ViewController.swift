@@ -14,6 +14,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     //To be affected by code
     @IBOutlet var statePicker: UIPickerView!
     @IBOutlet var statePickerBtn: UIButton!
+    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var addressTextField: UITextField!
+    @IBOutlet var cityTextField: UITextField!
+    @IBOutlet var buyNow: UIButton!
     
     //All of the US States for the user to choose from. Each state will represent a different row in the statePicker
     let USStates = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusett", "Michigan", "Minnesota", "Missouri", "Mississippi", "Montana", "Nebraska", "Nervada", "New Hamshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "Washington D.C.", "West Virginia", "Wisconsin", "Wyoming"]
@@ -63,7 +67,17 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         statePickerBtn.setTitle(USStates[row], for: .normal)
         statePicker.isHidden = true
+        buyNow.isHidden = false
+        
+//        if nameTextField.text != "" && addressTextField.text != "" && cityTextField.text != "" {
+//            
+//            buyNow.isHidden = false
+//        }
     }
+    
+    @IBAction func buyNowBtn(_ sender: Any) {
+    }
+
     
 }
 
