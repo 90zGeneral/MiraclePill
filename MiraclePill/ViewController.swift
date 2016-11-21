@@ -68,16 +68,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         statePickerBtn.setTitle(USStates[row], for: .normal)
         statePicker.isHidden = true
         buyNow.isHidden = false
-        
-//        if nameTextField.text != "" && addressTextField.text != "" && cityTextField.text != "" {
-//            
-//            buyNow.isHidden = false
-//        }
-    }
-    
-    @IBAction func buyNowBtn(_ sender: Any) {
-    }
 
+    }
     
 }
 
